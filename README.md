@@ -24,15 +24,7 @@
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/36yGMHGFbR"><img src="https://img.shields.io/discord/1496644400590094540?logo=discord&logoColor=white&label=Discord&color=5865F2" alt="Discord" /></a>
-</p>
-
-<p align="center">
-</p>
-
-<p align="center">
   <a href="https://www.npmjs.com/package/riggr-universal"><img src="https://img.shields.io/npm/dw/riggr-universal?label=riggr-universal&logo=npm" alt="riggr-universal npm downloads" /></a>
-  <a href="https://www.npmjs.com/package/ecc-agentshield"><img src="https://img.shields.io/npm/dw/ecc-agentshield?label=ecc-agentshield&logo=npm" alt="ecc-agentshield npm downloads" /></a>
 </p>
 
 <p align="center">
@@ -52,18 +44,6 @@
 Use the [guided setup](#install-riggr) or [native plugin commands](#claude-code-details). Both install the same `riggr@riggr` plugin. Choose one and do not stack a full manual Claude install on top.
 
 <div align="center">
-
-<table aria-label="RIGGR primary links">
-<tr>
-<td width="100%" align="center">
-  <a href="https://discord.gg/36yGMHGFbR">
-    <img src="assets/images/community/discord.svg" height="42" alt="Discord" /><br />
-    <strong>Community</strong>
-  </a><br />
-  <sub>Discord · Q&amp;A · Show and Tell</sub>
-</td>
-</tr>
-</table>
 
 </div>
 
@@ -1877,7 +1857,7 @@ Install RIGGR only from official sources:
 
 - GitHub repository: <https://github.com/pankajpandey-codes/riggr>
 - Claude Code plugin: `riggr@riggr`
-- npm packages: [`riggr-universal`](https://www.npmjs.com/package/riggr-universal) and [`ecc-agentshield`](https://www.npmjs.com/package/ecc-agentshield)
+- npm package: [`riggr-universal`](https://www.npmjs.com/package/riggr-universal)
 
 Scan a project with an already installed, reviewed AgentShield binary (see [runner provenance](#agentshield-runner-provenance)):
 
