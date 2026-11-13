@@ -65,31 +65,6 @@ function assertExactComputeRoute(content) {
   );
 }
 
-function assertExactHref(content, expectedHref) {
-  const expected = new URL(expectedHref);
-  const hrefs = [...content.matchAll(/\bhref="([^"]+)"/g)].map(match => match[1]);
-  const properties = [
-    'protocol',
-    'hostname',
-    'port',
-    'username',
-    'password',
-    'pathname',
-    'search',
-    'hash',
-  ];
-  const hasExactHref = hrefs.some((href) => {
-    try {
-      const candidate = new URL(href);
-      return properties.every(property => candidate[property] === expected[property]);
-    } catch {
-      return false;
-    }
-  });
-
-  assert.ok(hasExactHref, `Should include the exact href ${expectedHref}`);
-}
-
 function assertHonestComputeCopy(content) {
   assertExactComputeRoute(content);
   assert.match(content, /preferred compute sponsor/i);
