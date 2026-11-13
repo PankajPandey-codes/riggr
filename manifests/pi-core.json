@@ -3,7 +3,7 @@
   "profile": {
     "dir": "pi/core",
     "packageName": "riggr-pi-core",
-    "license": "UNLICENSED",
+    "license": "MIT",
     "keywords": [
       "pi-package",
       "skills"
