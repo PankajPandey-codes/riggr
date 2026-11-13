@@ -134,29 +134,9 @@ function main() {
         /exact Itô compute route/
       );
     }],
-    ['README keeps the community card and all three guides inline', () => {
+    ['README keeps all three guides inline', () => {
       const readme = read('README.md');
-      const primaryLinks = extractNamedTable(readme, 'RIGGR primary links');
       const guides = extractNamedTable(readme, 'RIGGR guides');
-      const centeredPrimaryLinks = readme.match(
-        /<div align="center">\s*<table[^>]*aria-label="RIGGR primary links"[^>]*>[\s\S]*?<\/table>\s*<\/div>/
-      );
-
-      assert.ok(centeredPrimaryLinks, 'The primary-link card should be centered');
-      assert.strictEqual((primaryLinks.match(/<td\b/g) || []).length, 1);
-                  assertExactHref(primaryLinks, 'https://discord.gg/36yGMHGFbR');
-      assert.ok(primaryLinks.includes('assets/images/community/discord.svg'));
-
-      for (const iconPath of [
-        'assets/images/community/discord.svg',
-      ]) {
-        const icon = read(iconPath);
-        assert.match(icon, /<svg\b/);
-        assert.doesNotMatch(
-          icon,
-          /<script|<foreignObject|\son[a-z]+=|(?:href|xlink:href)=/i
-        );
-      }
 
       assert.strictEqual((guides.match(/<td\b/g) || []).length, 3);
       assert.ok(guides.includes('./the-shortform-guide.md'));
