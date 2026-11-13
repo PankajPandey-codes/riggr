@@ -36,6 +36,14 @@ function test(name, fn) {
   }
 }
 
+// The real-scanner pre-commit fixtures shell out to a ripgrep binary with PCRE2.
+// CI installs one; locally they skip when it is missing (shell functions or
+// aliases named rg do not count). Under CI a missing binary still fails.
+const realRipgrepAvailable = Boolean(process.env.CI) || (
+  os.platform() !== 'win32'
+  && spawnSync('bash', ['-c', 'rg_path="$(type -P rg)" && "$rg_path" --pcre2-version'], { encoding: 'utf8' }).status === 0
+);
+
 function createTempDir(prefix) {
   return fs.mkdtempSync(path.join(os.tmpdir(), prefix));
 }
@@ -237,6 +245,10 @@ for (const [name, options, status, diagnostic] of [
   ['preserves the pre-commit bypass warning', { env: { RIGGR_SKIP_PRECOMMIT: '1' } }, 0, /hook bypassed via env/],
   ['preserves the global bypass warning', { env: { RIGGR_SKIP_GIT_HOOKS: '1' } }, 0, /hook bypassed via env/],
 ]) {
+  if (options.scanner === 'real' && !realRipgrepAvailable) {
+    console.log(`  - pre-commit ${name} (skipped: no ripgrep binary with PCRE2 on PATH; mandatory in CI)`);
+    continue;
+  }
   if (test(`pre-commit ${name}`, () => {
     const result = runHermeticPreCommit(options);
     assert.strictEqual(result.status, status, `${result.stdout}\n${result.stderr}`);
