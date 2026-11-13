@@ -1,7 +1,7 @@
 {
   "name": "riggr-pi-core",
   "version": "2.2.3",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": [
     "pi-package",
     "skills"
