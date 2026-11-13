@@ -2,14 +2,6 @@
   <img src="../../assets/hero.png" alt="RIGGR - エージェントハーネスのオペレーティングシステム" width="100%" />
 </p>
 
-<p align="center">
-    <picture>
-    </picture>
-  </a>
-    <picture>
-    </picture>
-  </a>
-</p>
 
 <p align="center">
   <strong>Language:</strong>

@@ -2,14 +2,6 @@
   <img src="assets/hero.png" alt="RIGGR - the agent harness operating system" width="100%" />
 </p>
 
-<p align="center">
-    <picture>
-    </picture>
-  </a>
-    <picture>
-    </picture>
-  </a>
-</p>
 
 <p align="center">
   <strong>Language:</strong>
@@ -103,11 +95,6 @@ Access to 71 agents, 314 skills, and 98 legacy command shims, plus hooks, rules,
 | Rules            |   Selective | Always-loaded standards you choose by language or project                            |
 | AgentShield      |    Included | Scanning for prompts, hooks, MCP config, permissions, secrets, and agent files       |
 
-<p align="center">
-    <picture>
-    </picture>
-  </a>
-</p>
 
 ## Install RIGGR
 

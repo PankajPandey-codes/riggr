@@ -2,10 +2,12 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     schedule:
-      interval: "weekly"
-      day: "monday"
-    open-pull-requests-limit: 10
+      interval: "monthly"
+    open-pull-requests-limit: 3
     labels:
       - "dependencies"
       - "npm"
@@ -23,9 +25,11 @@ updates:
 
   - package-ecosystem: "github-actions"
     directory: "/"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "monthly"
     labels:
       - "dependencies"
       - "ci"
@@ -43,9 +47,11 @@ updates:
 
   - package-ecosystem: "pip"
     directory: "/"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "monthly"
     versioning-strategy: "increase-if-necessary"
     labels:
       - "dependencies"
@@ -64,9 +70,11 @@ updates:
 
   - package-ecosystem: "pip"
     directory: "/skills/skill-comply"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "monthly"
     versioning-strategy: "increase-if-necessary"
     labels:
       - "dependencies"
@@ -85,9 +93,11 @@ updates:
 
   - package-ecosystem: "cargo"
     directory: "/riggr2"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "monthly"
     labels:
       - "dependencies"
       - "rust"
