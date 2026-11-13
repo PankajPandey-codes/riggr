@@ -24,6 +24,7 @@
 </p>
 
 <p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License" /></a>
   <a href="https://www.npmjs.com/package/riggr-universal"><img src="https://img.shields.io/npm/dw/riggr-universal?label=riggr-universal&logo=npm" alt="riggr-universal npm downloads" /></a>
 </p>
 
