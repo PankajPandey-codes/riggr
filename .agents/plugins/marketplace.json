@@ -1,0 +1,21 @@
+{
+  "name": "riggr",
+  "interface": {
+    "displayName": "RIGGR"
+  },
+  "plugins": [
+    {
+      "name": "riggr",
+      "version": "2.2.3",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

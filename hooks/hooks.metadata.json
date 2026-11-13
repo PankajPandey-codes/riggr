@@ -1,0 +1,156 @@
+{
+  "$schema": "../schemas/hooks-metadata.schema.json",
+  "entries": {
+    "PreToolUse": [
+      {
+        "id": "pre:bash:dispatcher",
+        "description": "Consolidated Bash preflight dispatcher for quality, tmux, push, and GateGuard checks",
+        "fingerprint": "de1f2395774f"
+      },
+      {
+        "id": "pre:powershell:gateguard-fact-force",
+        "description": "PowerShell fact-forcing gate: inspect destructive commands without running unrelated Bash-only preflight hooks",
+        "fingerprint": "72def18c031a"
+      },
+      {
+        "id": "pre:write:doc-file-warning",
+        "description": "Doc file warning: warn about non-standard documentation files (exit code 0; warns only)",
+        "fingerprint": "2d0e424d3346"
+      },
+      {
+        "id": "pre:edit-write:suggest-compact",
+        "description": "Suggest manual compaction at logical intervals",
+        "fingerprint": "91f1b4c7a269"
+      },
+      {
+        "id": "pre:observe:continuous-learning",
+        "description": "Capture tool use observations for continuous learning",
+        "fingerprint": "be539866d8cf"
+      },
+      {
+        "id": "pre:governance-capture",
+        "description": "Capture governance events (secrets, policy violations, approval requests). Enable with RIGGR_GOVERNANCE_CAPTURE=1",
+        "fingerprint": "ae7b29ce314c"
+      },
+      {
+        "id": "pre:config-protection",
+        "description": "Block modifications to linter/formatter config files. Steers agent to fix code instead of weakening configs.",
+        "fingerprint": "369b0b49bdd6"
+      },
+      {
+        "id": "pre:mcp-health-check",
+        "description": "Check MCP server health before MCP tool execution and block unhealthy MCP calls",
+        "fingerprint": "be8f0a1afaf8"
+      },
+      {
+        "id": "pre:edit-write:gateguard-fact-force",
+        "description": "Fact-forcing gate: deny the first Edit/Write/MultiEdit/NotebookEdit of each file with questions chosen by target class and by what the change touches; a completed search naming the file in the current turn, a comment or whitespace-only edit, or a same-turn sibling of a new file already gated passes with a note instead; sensitive targets (secrets, keys, auth/payment code, migrations, CI workflows) and hard-linked files are always gated, also in subagents",
+        "fingerprint": "04cb711ed6b6"
+      },
+      {
+        "id": "pre:hookify-runtime",
+        "description": "Evaluate project-local Hookify rules before Bash, PowerShell, and file tools run",
+        "fingerprint": "2dfc270233d8"
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "id": "prompt:hookify-runtime",
+        "description": "Evaluate project-local Hookify prompt rules before a user prompt is processed",
+        "fingerprint": "c58202031178"
+      }
+    ],
+    "PreCompact": [
+      {
+        "id": "pre:compact",
+        "description": "Save state before context compaction",
+        "fingerprint": "f45e9006baad"
+      }
+    ],
+    "SessionStart": [
+      {
+        "id": "session:start",
+        "description": "Load previous context and detect package manager on new session",
+        "fingerprint": "64bec0777241"
+      },
+      {
+        "id": "session-start:plan-canvas-sessions",
+        "description": "Surface open Plan Canvas review sessions so a fresh session can resume the loop",
+        "fingerprint": "ee3ad80a97e6"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "id": "post:dispatcher:sync",
+        "description": "Run synchronous PostToolUse hooks in one process while preserving per-hook controls",
+        "fingerprint": "ab187c770ab1"
+      },
+      {
+        "id": "post:dispatcher:async",
+        "description": "Run background PostToolUse hooks in one process while preserving per-hook controls",
+        "fingerprint": "7363544fc0b8"
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "id": "post:mcp-health-check",
+        "description": "Track failed MCP tool calls, mark unhealthy servers, and attempt reconnect",
+        "fingerprint": "8374b6227fc0"
+      },
+      {
+        "id": "post:skill:track",
+        "description": "Record hard Skill tool failures for skill-health telemetry",
+        "fingerprint": "03c4c693978c"
+      }
+    ],
+    "Stop": [
+      {
+        "id": "stop:hookify-runtime",
+        "description": "Evaluate project-local Hookify completion rules before Claude stops",
+        "fingerprint": "63a5c0c44f06"
+      },
+      {
+        "id": "stop:plan-canvas-pending",
+        "description": "Deliver undelivered Plan Canvas browser feedback before the agent stops",
+        "fingerprint": "74829906a710"
+      },
+      {
+        "id": "stop:format-typecheck",
+        "description": "Batch format (Biome/Prettier) and typecheck (tsc) all JS/TS files edited this response — runs once at Stop instead of after every Edit",
+        "fingerprint": "cd58059ce1d9"
+      },
+      {
+        "id": "stop:check-console-log",
+        "description": "Check for console.log in modified files after each response",
+        "fingerprint": "24491957de2f"
+      },
+      {
+        "id": "stop:session-end",
+        "description": "Persist session state after each response (Stop carries transcript_path)",
+        "fingerprint": "0d8df89564f9"
+      },
+      {
+        "id": "stop:evaluate-session",
+        "description": "Evaluate session for extractable patterns",
+        "fingerprint": "4dd5f8a2dadb"
+      },
+      {
+        "id": "stop:cost-tracker",
+        "description": "Track token and cost metrics per session",
+        "fingerprint": "620ac4815dda"
+      },
+      {
+        "id": "stop:desktop-notify",
+        "description": "Send desktop notification (macOS/WSL) with task summary when Claude responds",
+        "fingerprint": "26333daeeb65"
+      }
+    ],
+    "SessionEnd": [
+      {
+        "id": "session:end:marker",
+        "description": "Session end lifecycle marker (non-blocking)",
+        "fingerprint": "07124a6a6625"
+      }
+    ]
+  }
+}

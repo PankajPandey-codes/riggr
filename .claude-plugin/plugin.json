@@ -1,0 +1,46 @@
+{
+  "name": "riggr",
+  "version": "2.2.3",
+  "description": "Harness-native RIGGR plugin for engineering teams - 71 agents, 314 skills, 98 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+  "author": {
+    "name": "Pankaj Pandey",
+    "url": "https://github.com/pankajpandey-codes/riggr"
+  },
+  "homepage": "https://example.com",
+  "repository": "https://github.com/pankajpandey-codes/riggr",
+  "license": "UNLICENSED",
+  "keywords": [
+    "claude-code",
+    "agents",
+    "skills",
+    "hooks",
+    "rules",
+    "tdd",
+    "code-review",
+    "security",
+    "workflow",
+    "automation",
+    "best-practices"
+  ],
+  "userConfig": {
+    "hooks_enabled": {
+      "type": "boolean",
+      "title": "Enable RIGGR hooks",
+      "description": "Run RIGGR's local lifecycle, quality, and safety automation. Disable this to keep skills and commands without local hook automation.",
+      "default": true
+    },
+    "hook_profile": {
+      "type": "string",
+      "title": "RIGGR hook profile",
+      "description": "Choose minimal, standard, or strict. Invalid values safely fall back to standard.",
+      "default": "standard"
+    }
+  },
+  "mcpServers": {},
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

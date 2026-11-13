@@ -1,0 +1,17 @@
+{
+  "name": "riggr-pi-core",
+  "version": "2.2.3",
+  "license": "UNLICENSED",
+  "keywords": [
+    "pi-package",
+    "skills"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ],
+    "prompts": [
+      "./commands"
+    ]
+  }
+}
