@@ -236,9 +236,7 @@ RIGGR/
 
 ## 生態系統工具
 
-
 從您的儲存庫自動生成 Claude Code 技能。
-
 
 分析您的儲存庫並建立：
 - **SKILL.md 檔案** - 可直接用於 Claude Code 的技能
@@ -453,7 +451,6 @@ node tests/hooks/hooks.test.js
 ---
 
 ## Star 歷史
-
 
 ---
 

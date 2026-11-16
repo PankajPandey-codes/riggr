@@ -14,7 +14,6 @@ RIGGR'de bir güvenlik açığı keşfederseniz, lütfen sorumlu bir şekilde bi
 
 **Güvenlik açıkları için herkese açık GitHub issue açmayın.**
 
-
 - Güvenlik açığının açıklaması
 - Yeniden oluşturma adımları
 - Etkilenen sürüm(ler)

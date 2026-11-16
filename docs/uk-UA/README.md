@@ -76,7 +76,6 @@
 
 </div>
 
-
 <p align="center"><a href="#встановлення-riggr">Перейти до встановлення ↓</a></p>
 
 # RIGGR
@@ -1779,7 +1778,6 @@ node tests/hooks/hooks.test.js
 </details>
 
 ## Посилання
-
 
 ## Ліцензія
 

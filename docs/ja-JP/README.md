@@ -2,7 +2,6 @@
   <img src="../../assets/hero.png" alt="RIGGR - エージェントハーネスのオペレーティングシステム" width="100%" />
 </p>
 
-
 <p align="center">
   <strong>Language:</strong>
   <a href="../../README.md">English</a> |
@@ -67,7 +66,6 @@
 </table>
 
 </div>
-
 
 <p align="center"><a href="#riggr-のインストール">インストールへジャンプ ↓</a></p>
 
@@ -1887,7 +1885,6 @@ skills、agents、rules、hooks、ドキュメント、テスト、アダプタ�
 </details>
 
 ## リンク
-
 
 ## ライセンス
 

@@ -14,7 +14,6 @@ Si descubres una vulnerabilidad de seguridad en RIGGR, por favor repórtala de f
 
 **No abras un issue público de GitHub para vulnerabilidades de seguridad.**
 
-
 - Una descripción de la vulnerabilidad
 - Pasos para reproducirla
 - La(s) versión(es) afectada(s)

@@ -1,6 +1,5 @@
 # Plugins and Marketplaces
 
-
 ---
 
 ## Marketplaces

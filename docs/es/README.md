@@ -52,7 +52,6 @@ RIGGR v2.0.0-rc.1 añade la historia pública del operador Hermes sobre esa capa
 </tr>
 </table>
 
-
 ---
 
 ## Las Guías
@@ -1317,11 +1316,9 @@ Proyectos construidos sobre o inspirados en RIGGR:
 
 ## Historial de Estrellas
 
-
 ---
 
 ## Enlaces
-
 
 ---
 

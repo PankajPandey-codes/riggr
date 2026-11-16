@@ -10,6 +10,7 @@ Include: language/framework skills; testing/TDD; code review; security review (n
 Exclude anything that:
 - makes network calls, needs API keys, or downloads at runtime (npx, pip install, curl|sh)
 - wraps third-party SaaS (exa, context7, fal, videodb, x-api, social/marketing/SEO/outreach)
+- integrates commercial products (AgentShield, billing/ops skills)
 - depends on Claude-Code-only mechanics (hooks, agent rosters/orch-*, continuous-learning, loops, hookify, cost tracking, session save/resume, gateguard)
 - venture-specific (ito-*, prediction-market-*, hermes-*, nasiko-*, openclaw-*, x402)
 - niche domain pack (healthcare/HIPAA, supply chain/logistics, homelab, scientific, visa/legal docs) or offensive security (bug bounty)

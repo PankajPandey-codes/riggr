@@ -184,7 +184,6 @@ git push origin add-python-reviewer
 
 ## 有問題？
 
-
 ---
 
 感謝您的貢獻。讓我們一起打造優質的資源。

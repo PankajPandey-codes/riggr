@@ -52,7 +52,6 @@ RIGGR v2.0.0-rc.1 ergänzt diese wiederverwendbare Schicht um die öffentliche H
 </tr>
 </table>
 
-
 ---
 
 ## Die Leitfäden
@@ -1692,11 +1691,9 @@ Etwas mit RIGGR gebaut? Öffne einen PR, um es hier hinzuzufügen.
 
 ## Star-Verlauf
 
-
 ---
 
 ## Links
-
 
 ---
 

@@ -536,7 +536,6 @@ RIGGR/
 
 适用于高级功能（10k+ 提交、自动 PR、团队共享）：
 
-
 ```bash
 # Comment on any issue:
 /skill-creator analyze
@@ -1415,7 +1414,6 @@ RIGGR 是**第一个最大化利用每个主要 AI 编码工具的插件**。以
 ***
 
 ## Star 历史
-
 
 ***
 

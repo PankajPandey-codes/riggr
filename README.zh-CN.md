@@ -487,7 +487,6 @@ RIGGR/
 
 用于高级功能（10k+ 提交、自动 PR、团队共享）：
 
-
 ```bash
 # 在任何问题上评论：
 /skill-creator analyze
@@ -826,11 +825,9 @@ node tests/hooks/hooks.test.js
 
 ## Star 历史
 
-
 ---
 
 ## 链接
-
 
 ---
 

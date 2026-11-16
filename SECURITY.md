@@ -17,7 +17,6 @@ Use GitHub private vulnerability reporting whenever possible — it reaches the 
 
 - <https://github.com/pankajpandey-codes/riggr/security/advisories/new>
 
-
 Do **not** open a public GitHub issue for security vulnerabilities.
 
 Include:

@@ -2,7 +2,6 @@
   <img src="assets/hero.png" alt="RIGGR - the agent harness operating system" width="100%" />
 </p>
 
-
 <p align="center">
   <strong>Language:</strong>
   <a href="README.md">English</a> |
@@ -48,7 +47,6 @@ Use the [guided setup](#install-riggr) or [native plugin commands](#claude-code-
 
 </div>
 
-
 <p align="center"><a href="#install-riggr">Jump to install ↓</a></p>
 
 # RIGGR
@@ -75,7 +73,6 @@ Access to 71 agents, 314 skills, and 98 legacy command shims, plus hooks, rules,
 | Hooks and memory |     Runtime | Enforcement, session summaries, continuous learning, instincts, and context controls |
 | Rules            |   Selective | Always-loaded standards you choose by language or project                            |
 | AgentShield      |    Included | Scanning for prompts, hooks, MCP config, permissions, secrets, and agent files       |
-
 
 ## Install RIGGR
 
