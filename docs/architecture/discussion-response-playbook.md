@@ -11,7 +11,6 @@ ITO-59 is refreshed:
 
 ```bash
 npm run discussion:audit -- --json
-node scripts/platform-audit.js --json
 ```
 
 The queue is current only when:

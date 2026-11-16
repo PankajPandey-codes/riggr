@@ -73,7 +73,6 @@ function main() {
       assert.match(result.stdout, /control-pane/);
       assert.match(result.stdout, /loop-status/);
       assert.match(result.stdout, /work-items/);
-      assert.match(result.stdout, /platform-audit/);
       assert.match(result.stdout, /security-ioc-scan/);
       assert.match(result.stdout, /feedback/);
     }],
@@ -316,11 +315,6 @@ function main() {
       const result = runCli(['help', 'work-items']);
       assert.strictEqual(result.status, 0, result.stderr);
       assert.match(result.stdout, /node scripts\/work-items\.js upsert/);
-    }],
-    ['supports help for the platform-audit subcommand', () => {
-      const result = runCli(['help', 'platform-audit']);
-      assert.strictEqual(result.status, 0, result.stderr);
-      assert.match(result.stdout, /Usage: node scripts\/platform-audit\.js/);
     }],
     ['supports help for the security-ioc-scan subcommand', () => {
       const result = runCli(['help', 'security-ioc-scan']);

@@ -79,10 +79,6 @@ const COMMANDS = {
     script: 'status.js',
     description: 'Query the RIGGR SQLite state store status summary',
   },
-  'platform-audit': {
-    script: 'platform-audit.js',
-    description: 'Audit GitHub queues, discussions, roadmap, release, and security evidence',
-  },
   'security-ioc-scan': {
     script: 'ci/scan-supply-chain-iocs.js',
     description: 'Scan dependency and AI-tool persistence surfaces for active supply-chain IOCs',
@@ -127,7 +123,6 @@ const PRIMARY_COMMANDS = [
   'repair',
   'auto-update',
   'status',
-  'platform-audit',
   'security-ioc-scan',
   'sessions',
   'work-items',
@@ -194,7 +189,6 @@ Examples:
   riggr status --json
   riggr status --exit-code
   riggr status --markdown --write status.md
-  riggr platform-audit --json --allow-untracked docs/drafts/
   riggr security-ioc-scan --home
   riggr sessions
   riggr sessions session-active --json
