@@ -47,7 +47,7 @@ test('riggr welcome renders the install artwork for captured agent output', () =
   assert.match(result.stdout, /Welcome to RIGGR!/);
   assert.ok(result.stdout.includes(`v${version}`));
   assert.match(result.stdout, /GitHub:\s+https:\/\/github\.com\/pankajpandey-codes\/riggr/);
-  assert.match(result.stdout, /Discord:\s+https:\/\/discord\.gg\/36yGMHGFbR/);
+  assert.doesNotMatch(result.stdout, /discord/i);
   assert.strictEqual(result.stderr, '');
 });
 

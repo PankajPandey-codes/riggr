@@ -10,7 +10,6 @@ const {
 
 const OFFICIAL_LINKS = Object.freeze({
   github: 'https://github.com/pankajpandey-codes/riggr',
-  discord: 'https://discord.gg/36yGMHGFbR',
   documentation: 'https://github.com/pankajpandey-codes/riggr#readme',
   githubApp: 'https://github.com/pankajpandey-codes/riggr',
 });
@@ -60,7 +59,7 @@ test('renders the cfonts block RIGGR wordmark with a welcome, version, and boxed
   assert.ok(lines.slice(boxTop + 1, boxBottom).every(line => /^ {2}│ .* │$/.test(line)));
   assert.strictEqual(lines[boxTop].length, lines[boxBottom].length);
   assert.ok(welcome.includes(`GitHub:        ${OFFICIAL_LINKS.github}`));
-  assert.ok(welcome.includes(`Discord:       ${OFFICIAL_LINKS.discord}`));
+  assert.strictEqual(/discord/i.test(welcome), false);
   assert.ok(welcome.includes(`Documentation: ${OFFICIAL_LINKS.documentation}`));
   assert.ok(welcome.includes(`GitHub App:     ${OFFICIAL_LINKS.githubApp}`));
   assert.strictEqual(welcome.includes('\x1b['), false);

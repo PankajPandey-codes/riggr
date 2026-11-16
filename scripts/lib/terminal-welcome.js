@@ -4,7 +4,6 @@ const { version: RIGGR_VERSION } = require('../../package.json');
 
 const COMMUNITY_LINKS = Object.freeze({
   github: 'https://github.com/pankajpandey-codes/riggr',
-  discord: 'https://discord.gg/36yGMHGFbR',
   documentation: 'https://github.com/pankajpandey-codes/riggr#readme',
   githubApp: 'https://github.com/pankajpandey-codes/riggr',
 });
@@ -77,7 +76,6 @@ function renderWordmark(color) {
 function renderCommunityLinks() {
   const rows = Object.freeze([
     `GitHub:        ${COMMUNITY_LINKS.github}`,
-    `Discord:       ${COMMUNITY_LINKS.discord}`,
     `Documentation: ${COMMUNITY_LINKS.documentation}`,
     `GitHub App:     ${COMMUNITY_LINKS.githubApp}`,
   ]);
