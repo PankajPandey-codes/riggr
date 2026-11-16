@@ -23,7 +23,6 @@
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/36yGMHGFbR"><img src="https://img.shields.io/discord/1496644400590094540?logo=discord&logoColor=white&label=Discord&color=5865F2" alt="Discord" /></a>
   <a href="../../LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT ライセンス" /></a>
 </p>
 
@@ -50,22 +49,6 @@
 ## Claude Code でインストール
 
 [ガイド付きセットアップ](#riggr-のインストール)または[ネイティブ plugin コマンド](#claude-code-の詳細)を使用してください。どちらも同じ `riggr@riggr` plugin をインストールします。どちらか一方を選び、その上にフルの手動 Claude インストールを重ねないでください。
-
-<div align="center">
-
-<table aria-label="RIGGR primary links">
-<tr>
-<td width="100%" align="center">
-  <a href="https://discord.gg/36yGMHGFbR">
-    <img src="../../assets/images/community/discord.svg" height="42" alt="Discord" /><br />
-    <strong>コミュニティ</strong>
-  </a><br />
-  <sub>Discord · Q&amp;A · Show and Tell</sub>
-</td>
-</tr>
-</table>
-
-</div>
 
 <p align="center"><a href="#riggr-のインストール">インストールへジャンプ ↓</a></p>
 

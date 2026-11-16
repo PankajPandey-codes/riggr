@@ -82,7 +82,7 @@ Adiciona uma instalação revisável para Claude Code, Codex e Kimi Code, com um
 
 ### v2.1.0 — O Sistema Operacional do Harness de Agentes (Jun 2026)
 
-Graduação estável da linha 2.0: 261 skills, substrato de control-pane, inventário MCP, serviço de ciclo de vida de worktrees e a comunidade no [Discord](https://discord.gg/36yGMHGFbR).
+Graduação estável da linha 2.0: 261 skills, substrato de control-pane, inventário MCP e serviço de ciclo de vida de worktrees.
 
 ### v2.0.0-rc.1 — Sincronização de Superfície, Fluxos Operacionais e RIGGR 2.0 Alpha (Abr 2026)
 

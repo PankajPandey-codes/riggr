@@ -82,7 +82,7 @@ Claude Code, Codex ve Kimi Code için incelenebilir çoklu harness kurulumu ve e
 
 ### v2.1.0 — Ajan Harness İşletim Sistemi (Haz 2026)
 
-2.0 hattının kararlı sürümü: 261 skill, control-pane altyapısı, MCP envanteri, worktree yaşam döngüsü servisi ve [Discord topluluğu](https://discord.gg/36yGMHGFbR).
+2.0 hattının kararlı sürümü: 261 skill, control-pane altyapısı, MCP envanteri ve worktree yaşam döngüsü servisi.
 
 ### v2.0.0-rc.1 — Surface Sync, Operatör İş Akışları ve RIGGR 2.0 Alpha (Nis 2026)
 

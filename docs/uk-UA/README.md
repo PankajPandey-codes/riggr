@@ -23,7 +23,6 @@
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/36yGMHGFbR"><img src="https://img.shields.io/discord/1496644400590094540?logo=discord&logoColor=white&label=Discord&color=5865F2" alt="Discord" /></a>
   <a href="../../LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license" /></a>
 </p>
 
@@ -59,22 +58,6 @@
 Це встановлює навички, агенти, команди та керовані плагіном хуки RIGGR. Якщо ви обираєте цей шлях, зупиніться на цьому. Не запускайте також повне ручне встановлення в Claude Code.
 
 > Керований майстер налаштування пакета з'явиться в `riggr-universal` 2.2.0. Поки npm залишається на 2.1.0, використовуйте нативні команди плагіна Claude вище.
-
-<div align="center">
-
-<table aria-label="Основні посилання RIGGR">
-<tr>
-<td width="100%" align="center">
-  <a href="https://discord.gg/36yGMHGFbR">
-    <img src="../../assets/images/community/discord.svg" height="42" alt="Discord" /><br />
-    <strong>Спільнота</strong>
-  </a><br />
-  <sub>Discord · Питання та відповіді · Show and Tell</sub>
-</td>
-</tr>
-</table>
-
-</div>
 
 <p align="center"><a href="#встановлення-riggr">Перейти до встановлення ↓</a></p>
 
@@ -700,7 +683,7 @@ RIGGR також постачає розширені керовані адапт
 
 ### v2.0.0: Операційна система агентних оболонок (черв. 2026)
 
-Стабільна градація лінійки 2.0: субстрат площини управління (адаптери сесій + інвентаризація MCP), служба життєвого циклу worktree, родина оркестраторів `orch-*` та запуск [спільноти RIGGR Discord](https://discord.gg/36yGMHGFbR). Повні примітки: [docs/releases/2.0.0/release-notes.md](../../docs/releases/2.0.0/release-notes.md).
+Стабільна градація лінійки 2.0: субстрат площини управління (адаптери сесій + інвентаризація MCP), служба життєвого циклу worktree та родина оркестраторів `orch-*`. Повні примітки: [docs/releases/2.0.0/release-notes.md](../../docs/releases/2.0.0/release-notes.md).
 
 ### v2.0.0-rc.1: Оновлення поверхні, оператори процеси та альфа RIGGR 2.0 (квіт. 2026)
 
