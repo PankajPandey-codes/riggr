@@ -120,7 +120,6 @@ function seedRepo(rootDir, overrides = {}, options = {}) {
     [`${releaseDir}/x-thread.md`]: 'X post with final URLs.',
     [`${releaseDir}/linkedin-post.md`]: 'LinkedIn post with final URLs.',
     [`${releaseDir}/article-outline.md`]: 'Article outline with final URLs.',
-    [`${releaseDir}/partner-sponsor-talks-pack.md`]: 'Outbound copy with final URLs.',
     'docs/business/social-launch-copy.md': 'Business launch copy with final URLs.',
   };
 

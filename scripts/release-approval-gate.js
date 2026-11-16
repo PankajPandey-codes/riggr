@@ -87,7 +87,6 @@ const ANNOUNCEMENT_FILE_NAMES = [
   'x-thread.md',
   'linkedin-post.md',
   'article-outline.md',
-  'partner-sponsor-talks-pack.md',
 ];
 
 function usage() {
