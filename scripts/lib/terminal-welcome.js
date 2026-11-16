@@ -5,7 +5,6 @@ const { version: RIGGR_VERSION } = require('../../package.json');
 const COMMUNITY_LINKS = Object.freeze({
   github: 'https://github.com/pankajpandey-codes/riggr',
   documentation: 'https://github.com/pankajpandey-codes/riggr#readme',
-  githubApp: 'https://github.com/pankajpandey-codes/riggr',
 });
 
 const SUCCESS_ACTIONS = Object.freeze([
@@ -77,7 +76,6 @@ function renderCommunityLinks() {
   const rows = Object.freeze([
     `GitHub:        ${COMMUNITY_LINKS.github}`,
     `Documentation: ${COMMUNITY_LINKS.documentation}`,
-    `GitHub App:     ${COMMUNITY_LINKS.githubApp}`,
   ]);
   const contentWidth = Math.max(...rows.map(row => row.length));
   const border = '─'.repeat(contentWidth + 2);

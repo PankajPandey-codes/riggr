@@ -11,7 +11,6 @@ const {
 const OFFICIAL_LINKS = Object.freeze({
   github: 'https://github.com/pankajpandey-codes/riggr',
   documentation: 'https://github.com/pankajpandey-codes/riggr#readme',
-  githubApp: 'https://github.com/pankajpandey-codes/riggr',
 });
 
 let passed = 0;
@@ -61,7 +60,7 @@ test('renders the cfonts block RIGGR wordmark with a welcome, version, and boxed
   assert.ok(welcome.includes(`GitHub:        ${OFFICIAL_LINKS.github}`));
   assert.strictEqual(/discord/i.test(welcome), false);
   assert.ok(welcome.includes(`Documentation: ${OFFICIAL_LINKS.documentation}`));
-  assert.ok(welcome.includes(`GitHub App:     ${OFFICIAL_LINKS.githubApp}`));
+  assert.strictEqual(welcome.includes('GitHub App'), false);
   assert.strictEqual(welcome.includes('\x1b['), false);
 });
 
