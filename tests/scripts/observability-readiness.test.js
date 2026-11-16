@@ -67,12 +67,6 @@ function seedMinimalRepo(rootDir, overrides = {}) {
       'Linear GitHub handoff work-items issue capacity status update',
       'queue counts release gate flow lanes evidence'
     ].join('\n'),
-    'docs/RIGGR-2.0-GA-ROADMAP.md': [
-      'Execution Lanes And Tracking Contract',
-      'docs/architecture/progress-sync-contract.md',
-      'Linear progress',
-      'Every significant merge batch'
-    ].join('\n'),
     'docs/architecture/hud-status-session-control.md': [
       'context toolCalls activeAgents todos checks cost risk queueState',
       'create resume status stop diff pr mergeQueue conflictQueue',

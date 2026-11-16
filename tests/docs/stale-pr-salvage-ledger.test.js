@@ -93,16 +93,10 @@ test('stale PR salvage ledger keeps localization tails manual-review only', () =
   assert.ok(source.includes('not a release-blocking salvage task'));
 });
 
-test('legacy inventory and roadmap link to the durable salvage ledger', () => {
+test('legacy inventory links to the durable salvage ledger', () => {
   const inventory = read('docs/legacy-artifact-inventory.md');
-  const roadmap = read('docs/RIGGR-2.0-GA-ROADMAP.md');
 
   assert.ok(inventory.includes('docs/stale-pr-salvage-ledger.md'));
-  assert.ok(roadmap.includes('docs/stale-pr-salvage-ledger.md'));
-  assert.ok(roadmap.includes('#1687, #1609, #1563, #1564'));
-  assert.ok(roadmap.includes('Linear ITO-55'));
-  assert.ok(roadmap.includes('#1609'));
-  assert.ok(roadmap.includes('no automatic import remains release-blocking'));
 });
 
 test('stale PR salvage ledger records the May 12 gap pass', () => {

@@ -5,11 +5,6 @@ source candidate based on release 2.2.1. Source inclusion is not a release or li
 verification claim. Dates are targets, not commitments; bracketed numbers remain
 planning choices.
 
-The two older planning docs stay as evidence and history:
-`docs/RIGGR-2.0-GA-ROADMAP.md` (2.0 milestones and control-plane deltas) and
-`docs/RIGGR-PRO-SECURITY-ROADMAP.md` (AgentShield and Pro conversion). This file
-is the short, current view.
-
 ## Vision
 
 RIGGR is the operating layer between a developer and whatever coding agent they

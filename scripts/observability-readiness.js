@@ -125,7 +125,6 @@ function buildChecks(rootDir) {
   const readinessDoc = readText(rootDir, 'docs/architecture/observability-readiness.md');
   const hudStatusContract = readText(rootDir, 'docs/architecture/hud-status-session-control.md');
   const progressSyncContract = readText(rootDir, 'docs/architecture/progress-sync-contract.md');
-  const gaRoadmap = readText(rootDir, 'docs/RIGGR-2.0-GA-ROADMAP.md');
   const workItems = readText(rootDir, 'scripts/work-items.js');
   const publicationReadiness = readText(rootDir, 'docs/releases/2.0.0-rc.1/publication-readiness.md');
   const postHardeningEvidence = readText(rootDir, 'docs/releases/2.0.0-rc.1/publication-evidence-2026-05-13-post-hardening.md');
@@ -267,12 +266,6 @@ function buildChecks(rootDir) {
           'flow lanes',
           'evidence'
         ])
-        && includesAll(gaRoadmap, [
-          'Execution Lanes And Tracking Contract',
-          'docs/architecture/progress-sync-contract.md',
-          'Linear progress',
-          'Every significant merge batch'
-        ])
         && includesAll(workItems, [
           'sync-github',
           'github-pr',
@@ -280,7 +273,7 @@ function buildChecks(rootDir) {
           'sourceClosedAt',
           'riggr-work-items-sync-github'
         ]),
-      fix: 'Add the progress sync contract, link it from the GA roadmap, and preserve work-items GitHub sync.'
+      fix: 'Add the progress sync contract and preserve work-items GitHub sync.'
     },
     {
       id: 'release-safety-evidence',

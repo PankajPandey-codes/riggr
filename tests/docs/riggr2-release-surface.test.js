@@ -229,35 +229,6 @@ test('owner approval packet consolidates the final gated decisions', () => {
   assert.ok(hypergrowth.includes('owner-approval-packet-2026-05-19.md'));
 });
 
-test('GA roadmap mirrors the current May 19 release evidence', () => {
-  const roadmap = read('docs/RIGGR-2.0-GA-ROADMAP.md');
-
-  for (const marker of [
-    'owner-approval-packet-2026-05-19.md',
-    'preview-pack smoke digest `eebb8a66c33e`',
-    'local 2568-test suite',
-    'PR #2001',
-    'GitHub Actions run `26102500291`',
-    'PR #2002',
-    'GitHub Actions run `26103853507`',
-    'PR #2009',
-    'GitHub Actions run `26111313938`',
-    'PR #2019',
-    '30f60710',
-    '26135974576',
-    '467d148a-712a-4777-aad9-95593e9f1739',
-    '7642ee9c-3107-400c-a229-53e2895a8914',
-    'riggr-may-19-post-pr-2002-sync-64cef8f668e0',
-    'owner approval packet'
-  ]) {
-    assert.ok(roadmap.includes(marker), `GA roadmap missing current evidence marker ${marker}`);
-  }
-
-  assert.ok(!roadmap.includes('preview-pack smoke digest `bc2bf157616e`'));
-  assert.ok(!roadmap.includes('preview-pack smoke digest `531328aaaa53`'));
-  assert.ok(!roadmap.includes('local 2544-test suite'));
-});
-
 test('rc.1 quickstart gives a clone-to-cross-harness path', () => {
   const quickstart = read('docs/releases/2.0.0-rc.1/quickstart.md');
   for (const heading of ['Clone', 'Install', 'Verify', 'First Skill', 'Switch Harness']) {
@@ -490,14 +461,11 @@ test('release name and plugin publication checklist freezes rc.1 surfaces', () =
 });
 
 
-test('release checklist and roadmap link to publication readiness evidence gate', () => {
+test('release checklist links to publication readiness evidence gate', () => {
   const launchChecklist = read('docs/releases/2.0.0-rc.1/launch-checklist.md');
-  const roadmap = read('docs/RIGGR-2.0-GA-ROADMAP.md');
 
   assert.ok(launchChecklist.includes('publication-readiness.md'));
   assert.ok(launchChecklist.includes('fresh evidence'));
-  assert.ok(roadmap.includes('docs/releases/2.0.0-rc.1/publication-readiness.md'));
-  assert.ok(roadmap.includes('npm dist-tag'));
 });
 
 test('localized changelogs include rc.1 and 1.10.0 release entries', () => {

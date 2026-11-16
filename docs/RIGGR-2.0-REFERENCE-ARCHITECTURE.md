@@ -1,7 +1,6 @@
 # RIGGR 2.0 Reference Architecture
 
-Current execution mirror:
-[`RIGGR-2.0-GA-ROADMAP.md`](RIGGR-2.0-GA-ROADMAP.md).
+Current roadmap: [`ROADMAP.md`](ROADMAP.md).
 
 This document turns the May 2026 reference sweep into concrete RIGGR backlog
 shape. It is not a second strategy memo: every reference pressure below should

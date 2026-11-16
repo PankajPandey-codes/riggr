@@ -11,7 +11,7 @@ status update can claim a lane is current.
 | GitHub PRs/issues/discussions | Public queue and review state | Recheck live counts before every significant merge batch and before release approval. |
 | Linear project | Executive roadmap and stakeholder status update | Use project documents and project/issue comments because project status updates are disabled in this workspace; create/reuse issues for durable execution lanes. |
 | Local handoff | Durable operator continuity | Update the active handoff after every merge batch, queue drain, skipped release gate, or blocked external action. |
-| Repo roadmap | Auditable planning mirror | Keep `docs/RIGGR-2.0-GA-ROADMAP.md` aligned to merged PR evidence and unresolved gates. |
+| Repo roadmap | Auditable planning mirror | Keep `docs/ROADMAP.md` aligned to merged PR evidence and unresolved gates. |
 | `scripts/work-items.js` | Local tracker bridge | Sync GitHub PRs/issues into the SQLite work-items store for status snapshots and blocked follow-up. |
 
 ## Flow Lanes
