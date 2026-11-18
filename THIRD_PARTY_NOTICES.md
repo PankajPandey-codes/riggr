@@ -1,8 +1,8 @@
 Third-Party Notices
 ===================
 
-Portions of this project are derived from an open-source project distributed
-under the MIT License. Its copyright and permission notice is reproduced below
+Portions of this project are derived from ECC by Affaan Mustafa
+(https://github.com/affaan-m/ECC), distributed under the MIT License. Its copyright and permission notice is reproduced below
 as that license requires.
 
 ---
